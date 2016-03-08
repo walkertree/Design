@@ -10,6 +10,8 @@
 #include <QuartzCore/CoreAnimation.h>
 #include <Foundation/Foundation.h>
 
+
+
 typedef enum
 {
     ShapeType_Circle = 0,
@@ -18,7 +20,6 @@ typedef enum
 ShapeType;
 
 
-#pragma mark ---  工厂类  ---
 @interface Shape : NSObject
 
 @property (nonatomic, assign) CGRect frame;
@@ -27,7 +28,24 @@ ShapeType;
 
 - (void) showInLayer:(CALayer *)layer;
 
+
++(Shape *) squareShape:(CGRect) frame;
++(Shape *) circleShape:(CGRect) frame;
+
 @end
+
+@interface Circle : Shape
+
+@end
+
+
+@interface Square : Shape
+
+@end
+
+
+#pragma mark ---  工厂类  ---
+
 
 @implementation Shape
 
@@ -46,14 +64,22 @@ ShapeType;
     
 }
 
++(Shape *) squareShape:(CGRect) frame
+{
+    return [[Square alloc] initWithFrame:frame];
+}
+
++(Shape *) circleShape:(CGRect) frame
+{
+    return [[Circle alloc] initWithFrame:frame];
+}
+
 @end
 
 
 #pragma mark ---  工厂生产的子类 —— 圆形、方形  ---
 
-@interface Circle : Shape
 
-@end
 
 @implementation Circle
 
@@ -90,9 +116,7 @@ ShapeType;
 
 
 
-@interface Square : Shape
 
-@end
 
 @implementation Square
 
@@ -196,12 +220,14 @@ ShapeType;
 
 - (IBAction)circle:(id)sender {
     [self addAnimation1];
-    [[self getShapeClass:ShapeType_Circle] showInLayer:self.layer];
+//    [[self getShapeClass:ShapeType_Circle] showInLayer:self.layer];
+    [[Shape circleShape:self.rect] showInLayer:self.layer];
 }
 
 
 - (IBAction)square:(id)sender {
      [self addAnimation2];
-     [[self getShapeClass:ShapeType_Square] showInLayer:self.layer];
+//     [[self getShapeClass:ShapeType_Square] showInLayer:self.layer];
+    [[Shape squareShape:self.rect] showInLayer:self.layer];
 }
 @end
