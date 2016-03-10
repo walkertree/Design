@@ -15,6 +15,11 @@
 		232298D51C8DB41D005B06F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232298D31C8DB41D005B06F5 /* LaunchScreen.storyboard */; };
 		232298E01C8DB41E005B06F5 /* DesignTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 232298DF1C8DB41E005B06F5 /* DesignTests.m */; };
 		232298EB1C8DB41E005B06F5 /* DesignUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 232298EA1C8DB41E005B06F5 /* DesignUITests.m */; };
+		44757E911C902030007F6A24 /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44757E901C902030007F6A24 /* ImageFilter.m */; };
+		44757E941C902261007F6A24 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44757E931C902261007F6A24 /* ImageTransformFilter.m */; };
+		44757E961C9024AD007F6A24 /* 555@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44757E951C9024AD007F6A24 /* 555@2x.jpg */; };
+		44757E991C902760007F6A24 /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44757E981C902760007F6A24 /* DecoratorView.m */; };
+		44757E9C1C910162007F6A24 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44757E9B1C910162007F6A24 /* ImageShadowFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		232298E61C8DB41E005B06F5 /* DesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232298EA1C8DB41E005B06F5 /* DesignUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignUITests.m; sourceTree = "<group>"; };
 		232298EC1C8DB41E005B06F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44757E8F1C902030007F6A24 /* ImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		44757E901C902030007F6A24 /* ImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		44757E921C902261007F6A24 /* ImageTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		44757E931C902261007F6A24 /* ImageTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		44757E951C9024AD007F6A24 /* 555@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "555@2x.jpg"; sourceTree = "<group>"; };
+		44757E971C902760007F6A24 /* DecoratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
+		44757E981C902760007F6A24 /* DecoratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
+		44757E9A1C910162007F6A24 /* ImageShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		44757E9B1C910162007F6A24 /* ImageShadowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		44D2F9241C901E6100DEB0EF /* ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		44D2F9251C901F5E00DEB0EF /* UIImage+ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageComponent.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		232298B91C8DB41D005B06F5 = {
 			isa = PBXGroup;
 			children = (
+				44D2F9221C901E3900DEB0EF /* Image */,
 				232298C41C8DB41D005B06F5 /* Design */,
 				232298DE1C8DB41E005B06F5 /* DesignTests */,
 				232298E91C8DB41E005B06F5 /* DesignUITests */,
@@ -105,11 +122,14 @@
 				232298C91C8DB41D005B06F5 /* AppDelegate.m */,
 				232298CB1C8DB41D005B06F5 /* ViewController.h */,
 				232298CC1C8DB41D005B06F5 /* ViewController.m */,
+				44757E951C9024AD007F6A24 /* 555@2x.jpg */,
 				232298CE1C8DB41D005B06F5 /* Main.storyboard */,
 				232298D11C8DB41D005B06F5 /* Assets.xcassets */,
 				232298D31C8DB41D005B06F5 /* LaunchScreen.storyboard */,
 				232298D61C8DB41D005B06F5 /* Info.plist */,
 				232298C51C8DB41D005B06F5 /* Supporting Files */,
+				44757E971C902760007F6A24 /* DecoratorView.h */,
+				44757E981C902760007F6A24 /* DecoratorView.m */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -138,6 +158,21 @@
 				232298EC1C8DB41E005B06F5 /* Info.plist */,
 			);
 			path = DesignUITests;
+			sourceTree = "<group>";
+		};
+		44D2F9221C901E3900DEB0EF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				44757E9A1C910162007F6A24 /* ImageShadowFilter.h */,
+				44757E9B1C910162007F6A24 /* ImageShadowFilter.m */,
+				44D2F9241C901E6100DEB0EF /* ImageComponent.h */,
+				44D2F9251C901F5E00DEB0EF /* UIImage+ImageComponent.h */,
+				44757E8F1C902030007F6A24 /* ImageFilter.h */,
+				44757E901C902030007F6A24 /* ImageFilter.m */,
+				44757E921C902261007F6A24 /* ImageTransformFilter.h */,
+				44757E931C902261007F6A24 /* ImageTransformFilter.m */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +281,7 @@
 				232298D51C8DB41D005B06F5 /* LaunchScreen.storyboard in Resources */,
 				232298D21C8DB41D005B06F5 /* Assets.xcassets in Resources */,
 				232298D01C8DB41D005B06F5 /* Main.storyboard in Resources */,
+				44757E961C9024AD007F6A24 /* 555@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44757E941C902261007F6A24 /* ImageTransformFilter.m in Sources */,
 				232298CD1C8DB41D005B06F5 /* ViewController.m in Sources */,
+				44757E991C902760007F6A24 /* DecoratorView.m in Sources */,
+				44757E911C902030007F6A24 /* ImageFilter.m in Sources */,
 				232298CA1C8DB41D005B06F5 /* AppDelegate.m in Sources */,
 				232298C71C8DB41D005B06F5 /* main.m in Sources */,
+				44757E9C1C910162007F6A24 /* ImageShadowFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +538,7 @@
 				232298F11C8DB41E005B06F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232298F21C8DB41E005B06F5 /* Build configuration list for PBXNativeTarget "DesignTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +547,7 @@
 				232298F41C8DB41E005B06F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232298F51C8DB41E005B06F5 /* Build configuration list for PBXNativeTarget "DesignUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +556,7 @@
 				232298F71C8DB41E005B06F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
