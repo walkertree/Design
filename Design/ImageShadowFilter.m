@@ -20,12 +20,4 @@
     CGContextSetShadow(context, offset, 20.0f);
 }
 
-
-- (void) drawInRect:(CGRect)rect
-{
-    [self apply];
-    [self.component drawInRect:rect];
-}
-
-
 @end

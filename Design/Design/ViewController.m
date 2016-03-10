@@ -26,8 +26,8 @@
 
     //创建一个变化
     CGAffineTransform rotateTransform = CGAffineTransformMakeRotation(-M_PI / 4.0);
-    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(-image.size.width / 2.0,
-                                                                            image.size.height / 8.0);
+    CGAffineTransform translateTransform = CGAffineTransformMakeTranslation(-image.size.width / 4.0,
+                                                                            image.size.height / 4.0);
     CGAffineTransform finalTransform = CGAffineTransformConcat(rotateTransform, translateTransform);
     
     //真正的子类的方式
